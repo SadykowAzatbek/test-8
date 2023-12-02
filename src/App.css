@@ -1,6 +1,15 @@
 #root {
-  max-width: 1280px;
+  width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+}
+
+.active {
+  color: #290ab7;
+  border-top: 3px solid #290ab7;
+  text-decoration: none;
+}
+
+a {
+  display: block;
 }
