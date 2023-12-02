@@ -23,12 +23,8 @@ const QuotesForm = () => {
   const formSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
-    const quoteData = {
-      quote,
-    };
-
     try {
-      await axiosApi.post('quotes.json', quoteData);
+      await axiosApi.post('quotes.json', quote);
     } catch (err) {
       alert('Warning error ' + err);
     }
